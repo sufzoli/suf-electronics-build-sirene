@@ -1,0 +1,129 @@
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 2015.06.12. 13:00:54
+
+BeginCmp
+TimeStamp = /5577449E;
+Reference = J1;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /5577467E;
+Reference = J2;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /5577476F;
+Reference = J3;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774775;
+Reference = J4;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /5577485A;
+Reference = J5;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774860;
+Reference = J6;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774885;
+Reference = J7;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /5577488B;
+Reference = J8;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774AA8;
+Reference = J9;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774AAE;
+Reference = J10;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774AD3;
+Reference = J11;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774AD9;
+Reference = J12;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774AFE;
+Reference = J13;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774B04;
+Reference = J14;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774B29;
+Reference = J15;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774B2F;
+Reference = J16;
+ValeurCmp = LED;
+IdModule  = suf_connector_misc:Pin_Header_Angled_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774C06;
+Reference = J17;
+ValeurCmp = MCU;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x05;
+EndCmp
+
+BeginCmp
+TimeStamp = /55774D3C;
+Reference = J18;
+ValeurCmp = PWR;
+IdModule  = suf_connector_ncw:CONN_NCW396-02S;
+EndCmp
+
+EndListe
