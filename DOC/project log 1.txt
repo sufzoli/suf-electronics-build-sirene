@@ -1,0 +1,24 @@
+Light strip design and build
+
+
+When I first started to work no this project I planed to use a 48 channel LED driver from TI with 160 regular 5050 RGB LEDS.
+I even built the circuit and some LED strips for it:
+
+
+
+
+I just tried out the LED strips and not the controller. The project was put on side for a few months.
+Now I changed my mind, and switched to the WS2812B LEDs.
+I made a design for it :
+
+
+
+ I was thinking that the design is for the WS2812B, but in reality it was for WS2812. I just realized this when the ordered LEDs arrived and I opened the first one. It was a real surprise, that it has 4 pins instead of the 6 I expected. Fortunately, I postponed the board etching, so just the design needed some change
+So, ?I designed the light strip will be used in the police light. I made two version of the strip.
+One for the home eched PCB:
+
+
+And one for the production one:
+
+
+I etched, and built one of the home version to be able to test it with the MCU, and to be able to write the code until I waiting to my boards to arrive

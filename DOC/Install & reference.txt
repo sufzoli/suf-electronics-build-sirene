@@ -1,0 +1,49 @@
+https://wiki.ubuntu.com/ARM/RaspberryPi
+http://andicelabs.com/2014/03/usb-audio-beaglebone/
+http://askubuntu.com/questions/115369/how-to-play-mp3-files-from-the-command-line
+http://stackoverflow.com/questions/10763440/how-to-install-python3-version-of-package-via-pip-on-ubuntu
+https://learn.adafruit.com/neopixels-on-raspberry-pi/software
+
+Install Ubuntu 14.04 on the Raspberry PI2
+
+Packages:
+
+base:
+	mc
+	ssh
+development:
+	build-essential
+	git
+	scons
+	swig
+python 3.4:
+	python3-setuptools
+	python-dev
+audio:
+	alsa-base
+	alsa-utils
+	sox
+	libsox-fmt-all
+
+
+==========================
+python3:
+	sudo python3 -m easy_install pip
+	pip3 install requests
+
+note:
+  sudo apt-get install pip3
+may also works
+==========================
+Play mp3
+	play <file>
+
+==========================
+ws281x library:
+
+git clone https://github.com/sufzoli/rpi_ws281x.git
+cd rpi_ws281x
+scons
+cd python
+sudo python setup.py install
+	
