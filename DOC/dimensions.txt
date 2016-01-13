@@ -1,0 +1,11 @@
+
+Pot:
+Bottom: out:114	in:104
+Top: 	out:80	in:70
+Hight: 	out:111 in:96
+
+
+PSU:
+L: 85 W: 59 H: 39 - D:103,4
+
+[]

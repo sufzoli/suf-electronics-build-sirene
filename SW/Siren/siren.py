@@ -53,9 +53,21 @@ while True:
         planresult = requests.get(planurl,  auth=(user, pwd))
         planjson = planresult.json()
         if completedon < datetime.strptime(planjson['buildCompletedDate'], '%Y-%m-%dT%H:%M:%S.%fZ'):
-            buildlist.append(Build.__init__(planjson['plan']['key'], planjson['buildNumber'], planjson['state'], datetime.strptime(planjson['buildCompletedDate'], '%Y-%m-%dT%H:%M:%S.%fZ')))
-        # print(str(complettedon) + ',' + planjson['plan']['key'] + ',' + str(planjson['buildNumber']) + ',' + planjson['state'])
+            print(str(completedon) + ',' + planjson['plan']['key'] + ',' + str(planjson['buildNumber']) + ',' + planjson['state'])
+            buildlist.append(Build(planjson['plan']['key'], planjson['buildNumber'], planjson['state'], datetime.strptime(planjson['buildCompletedDate'], '%Y-%m-%dT%H:%M:%S.%fZ')))
 
+    for i in range(0, len(buildlist)):
+        if completedon < buildlist[i].completeddt:
+            completedon = buildlist[i].completeddt
+        if buildlist[i].state == 'Successful':
+            print('Build successful')
+        else:
+            print('Build failed')
+
+
+
+
+"""
     while buildlist.__len__() > 0:
         earliestdate = datetime.max
         for i in range(0, buildlist.__len__()):
@@ -68,5 +80,5 @@ while True:
         buildlist.remove(earliestindex)
         # run the voodooo
         print(str(completedon) + ',' + plankey + ',' + str(buildnum) + ',' + buildstate)
-
+"""
 

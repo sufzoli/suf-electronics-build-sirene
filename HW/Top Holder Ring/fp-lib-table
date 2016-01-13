@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name BS_LIB)(type KiCad)(uri C:\DATA\SourceControll\SUF-GitHub\Electronics\suf-electronics-build-sirene\HW\BS_LIB.pretty)(options "")(descr ""))
+)

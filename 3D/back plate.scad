@@ -1,0 +1,49 @@
+// back plate
+translate([64,0,-61])
+    rotate(a=[0,-90,0])
+        difference()
+        {
+            cylinder(h=128,d=160,$fn=100);
+            translate([64,-60,-0.001])
+                cube([20,120,128.002]);
+            translate([-90,-85,-0.001])
+                cube([151,170,128.002]);
+            translate([56,-44,7])
+                rotate(a=[0,90,0])
+                    cylinder(h=10,d=4,$fn=100);
+            translate([56,44,7])
+                rotate(a=[0,90,0])
+                    cylinder(h=10,d=4,$fn=100);
+            translate([56,-44,121])
+                rotate(a=[0,90,0])
+                    cylinder(h=10,d=4,$fn=100);
+            translate([56,44,121])
+                rotate(a=[0,90,0])
+                    cylinder(h=10,d=4,$fn=100);
+            translate([56,34,39])
+                rotate(a=[0,90,0])
+                    cylinder(h=10,d=7,$fn=100);
+            translate([56,10,25])
+                rotate(a=[0,90,0])
+                    cylinder(h=10,d=13,$fn=100);
+            translate([56,-40,12.5])
+                cube([10,12,25]);
+            translate([56,-17.5,15])
+                cube([10,13,20]);
+            translate([56,-26.7,108])
+                cube([10,16.5,14.5]);
+            translate([56,-7.6,108])
+                cube([10,15.5,17]);
+            translate([56,10.3,108])
+                cube([10,15.5,17]);
+
+            for(i=[0:8])
+            {
+                for(j=[0:3])
+                {
+                    translate([56,-37.5 + 20 * j,50 + i * 6])
+                        cube([10,15,3]);
+                }
+            }
+        }
+
