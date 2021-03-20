@@ -1,0 +1,39 @@
+1. Letöltés:
+https://www.raspberrypi.org/downloads/raspbian/
+
+2. Win32DiskImager-el felírni egy SD kártyára
+
+3. Belépés
+Eredeti felhasználó/jelszó pi/raspberry
+
+4. dpkg-reconfigure keyboard-configuration
+
+5. sudo update-rc.d ssh enable
+
+6. reboot
+
+7. Upgrade
+apt-get update
+apt-get dist-upgrade
+apt-get install mc pulseaudio pulseaudio-module-bluetooth mpg123
+## wireless-tools wpasupplicant ???
+apt-get autoremove
+
+8. 
+bluetoothctl
+	trust 58:51:00:00:06:FB
+	quit
+
+9. Az audio connection script
+
+#!/bin/sh
+pulseaudio --start
+echo -e "connect 58:51:00:00:06:FB\nquit" | bluetoothctl
+cardindex=$(pacmd list-cards | grep index: | awk '{ print $2 }' | grep -v 0)
+pacmd set-card-profile $cardindex a2dp_sink
+pacmd set-default-sink bluez_sink.58_51_00_00_06_FB.a2dp_sink
+
+
+
+Audio teszt:
+mpg123 ~/build_siren/Bio\ Hazard\ Alarm.mp3
